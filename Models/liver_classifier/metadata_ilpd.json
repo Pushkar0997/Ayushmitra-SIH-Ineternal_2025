@@ -1,0 +1,23 @@
+{
+  "model_name": "ilpd_liver_classifier",
+  "models": {
+    "logistic_regression": "lr_ilpd.pkl",
+    "random_forest": "rf_ilpd.pkl",
+    "neural_network": "nn_ilpd_v1.h5"
+  },
+  "features": [
+    "Age",
+    "Gender",
+    "TB",
+    "DB",
+    "Alkphos",
+    "Sgpt",
+    "Sgot",
+    "TP",
+    "ALB",
+    "A/G Ratio"
+  ],
+  "target": "Selector",
+  "scaler": "scaler_ilpd.pkl",
+  "notes": "Binary classifier: 1 = liver disease, 0 = no disease. For research/demo use only, not diagnostic."
+}

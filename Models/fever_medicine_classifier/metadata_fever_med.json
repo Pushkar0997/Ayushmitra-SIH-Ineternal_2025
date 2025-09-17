@@ -1,0 +1,34 @@
+{
+  "model_name": "fever_medicine_classifier",
+  "models": {
+    "logistic_regression": "lr_fever_med.pkl",
+    "random_forest": "rf_fever_med.pkl",
+    "neural_network": "nn_fever_med_v1.h5"
+  },
+  "features": [
+    "Temperature",
+    "Fever_Severity",
+    "Age",
+    "Gender",
+    "BMI",
+    "Headache",
+    "Body_Ache",
+    "Fatigue",
+    "Chronic_Conditions",
+    "Allergies",
+    "Smoking_History",
+    "Alcohol_Consumption",
+    "Humidity",
+    "AQI",
+    "Physical_Activity",
+    "Diet_Type",
+    "Heart_Rate",
+    "Blood_Pressure",
+    "Previous_Medication"
+  ],
+  "target_column": "Recommended_Medication",
+  "target_label_encoder": "target_label_encoder.pkl",
+  "feature_encoders": "feature_encoders.pkl",
+  "scaler": "scaler_fever_med.pkl",
+  "notes": "Binary classifier for recommending Paracetamol or Ibuprofen based on patient data. For research/demo use only."
+}

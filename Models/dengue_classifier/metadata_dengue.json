@@ -1,0 +1,17 @@
+{
+  "model_name": "dengue_classifier",
+  "models": {
+    "logistic_regression": "lr_dengue.pkl",
+    "random_forest": "rf_dengue.pkl",
+    "neural_network": "nn_dengue_v1.h5"
+  },
+  "features": [
+    "Fever",
+    "Headache",
+    "JointPain",
+    "Bleeding"
+  ],
+  "target": "Dengue",
+  "scaler": "scaler_dengue.pkl",
+  "notes": "Binary classifier: 1 = Dengue, 0 = No Dengue. For research/demo use only."
+}
