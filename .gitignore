@@ -87,3 +87,7 @@ logs/
 !package-lock.json
 !components.json
 !tsconfig.json
+
+# Allow security cleanup scripts (exceptions to broad patterns above)
+!cleanup-api-keys.ps1
+!verify-cleanup.ps1
