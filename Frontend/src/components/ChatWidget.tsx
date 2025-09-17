@@ -24,8 +24,8 @@ export function ChatWidget() {
   const fileInputRef = useRef<HTMLInputElement | null>(null)
 
   // --- CONFIGURATION FOR DIRECT GROQ API CALL ---
-  // ⚠️ Paste your secret Groq API key here for testing
-  const GROQ_API_KEY = "my secret groq api key";
+  // Get API key from environment variables
+  const GROQ_API_KEY = process.env.NEXT_PUBLIC_GROQ_API_KEY || "";
   const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
   // ---
 
