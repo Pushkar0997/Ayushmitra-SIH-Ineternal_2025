@@ -25,7 +25,7 @@ export function ChatWidget() {
 
   // --- CONFIGURATION FOR DIRECT GROQ API CALL ---
   // ⚠️ Paste your secret Groq API key here for testing
-  const GROQ_API_KEY = "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";
+  const GROQ_API_KEY = "my secret groq api key";
   const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
   // ---
 
