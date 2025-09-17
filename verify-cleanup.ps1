@@ -12,8 +12,8 @@ Write-Host "1. Checking current files for API keys..." -ForegroundColor Yellow
 
 $apiKeyPatterns = @(
     "gsk_[a-zA-Z0-9]{51}",  # Groq API key pattern
-    "sk-[a-zA-Z0-9]{48,}",   # OpenAI-style API key pattern
-    "[a-zA-Z0-9_-]{32,}"     # Generic long strings that might be keys
+    "sk-[a-zA-Z0-9]{48}",   # OpenAI-style API key pattern  
+    "[a-zA-Z0-9_-]{32}"     # Generic long strings that might be keys
 )
 
 $filesToCheck = @(
@@ -117,8 +117,8 @@ if (Test-Path ".gitignore") {
 }
 
 Write-Host ""
-Write-Host "📋 SUMMARY" -ForegroundColor Cyan
-Write-Host "==========" -ForegroundColor Cyan
+Write-Host "SUMMARY" -ForegroundColor Cyan
+Write-Host "=======" -ForegroundColor Cyan
 
 if ($foundIssues) {
     Write-Host "❌ Issues found that need attention!" -ForegroundColor Red
