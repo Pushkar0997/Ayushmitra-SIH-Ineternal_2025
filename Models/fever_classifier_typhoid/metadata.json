@@ -1,0 +1,1 @@
+{"model_name": "typhoid_classifier", "model_version": "v1", "target": "Acute_typhoid ", "features": ["TO", "TH", "AH", "BH", "OXK", "OX2", "Age", "Gender", "M", "A"]}
