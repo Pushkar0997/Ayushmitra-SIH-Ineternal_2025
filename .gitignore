@@ -1,19 +1,17 @@
-# Environment variables
+# ------------------------------
+# Secrets and environment files
+# ------------------------------
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# API keys and credentials
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
 **/kaggle.json
-**/*api*key*
-**/*secret*
-**/*token*
-**/*password*
-**/*credential*
 
-# OS generated files
+# ------------------------------
+# OS and editor artifacts
+# ------------------------------
 .DS_Store
 .DS_Store?
 ._*
@@ -22,14 +20,15 @@
 ehthumbs.db
 Thumbs.db
 
-# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Python
+# ------------------------------
+# Python and notebook artifacts
+# ------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -40,54 +39,57 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.ipynb_checkpoints/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Node.js
+# ------------------------------
+# Node/Next.js generated files
+# ------------------------------
 node_modules/
+Frontend/node_modules/
+Frontend/.next/
+Frontend/out/
+Frontend/.vercel/
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Build outputs
+# ------------------------------
+# Build, temp, logs and databases
+# ------------------------------
 build/
 dist/
 *.egg-info/
-
-# Temporary files
 *.tmp
 *.temp
 temp/
 tmp/
-
-# Logs
 *.log
 logs/
-
-# Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Compressed files containing potentially sensitive data
+# ------------------------------
+# Local archives and exports
+# ------------------------------
 *.zip
 *.tar.gz
 *.rar
 *.7z
 
-# Model files and datasets (often large and may contain sensitive data)
-*.pkl
-*.h5
-*.model
-*.csv
-*.json
-!package.json
-!package-lock.json
-!components.json
-!tsconfig.json
+# ------------------------------
+# ML artifact outputs (keep metadata in git)
+# ------------------------------
+Models/**/*.h5
+Models/**/*.pkl
+Models/**/*.model
+Models/**/checkpoints/
+Models/**/runs/
 
-# Allow security cleanup scripts (exceptions to broad patterns above)
+# ------------------------------
+# Keep security scripts versioned
+# ------------------------------
 !cleanup-api-keys.ps1
 !verify-cleanup.ps1
