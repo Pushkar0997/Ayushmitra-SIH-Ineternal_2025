@@ -89,7 +89,8 @@ Models/**/checkpoints/
 Models/**/runs/
 
 # ------------------------------
-# Keep security scripts versioned
+# Personal security incident files (local only)
 # ------------------------------
-!cleanup-api-keys.ps1
-!verify-cleanup.ps1
+cleanup-api-keys.ps1
+verify-cleanup.ps1
+SECURITY_CLEANUP_URGENT.md

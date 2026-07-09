@@ -49,7 +49,6 @@ Each model area includes notebook artifacts and metadata (for example feature li
 
 ### 5. Security and Cleanup Utilities
 - Environment setup documentation for safe secret management
-- Cleanup and verification scripts for API key incident response
 - Repository-level ignore policies to prevent sensitive files and generated artifacts from being committed
 
 ## How The System Connects
@@ -90,9 +89,6 @@ Ayushmitra-SIH-Ineternal_2025/
 │  ├─ skin_disease_classifier/
 │  └─ vector_borne_classifier/
 ├─ ENVIRONMENT_SETUP.md
-├─ SECURITY_CLEANUP_URGENT.md
-├─ cleanup-api-keys.ps1
-├─ verify-cleanup.ps1
 └─ README.md
 ```
 
@@ -138,7 +134,7 @@ This repository follows a security-first approach:
 
 Read before deployment:
 - ENVIRONMENT_SETUP.md
-- SECURITY_CLEANUP_URGENT.md
+- MODEL_ASSETS.md
 
 ## Repository Hygiene Policy
 
@@ -149,6 +145,12 @@ The repository is configured to keep GitHub clean and professional by excluding:
 - Heavy model binaries and local experiment outputs
 
 This keeps the repo focused on source, configuration, and reproducible project assets.
+
+## Documentation Index
+
+- README.md: Project overview, architecture, setup, and roadmap
+- MODEL_ASSETS.md: Model file policy, tracked vs local-only assets, and reproduction workflow
+- ENVIRONMENT_SETUP.md: Environment variable and secret setup
 
 ## Current Professionalization Highlights
 
